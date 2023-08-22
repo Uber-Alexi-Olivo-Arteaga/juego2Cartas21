@@ -1,0 +1,146 @@
+:root{
+  font-size: 10px;
+  --color-1: #aaaaaa66;
+  --color-2: #aaaaaaff;
+  --color-primario: #eeeeee;
+  --color-secundario: #999999;
+  --color-terciario: #333333;
+  --color-blanco: #ffffff;
+  --color-gris: #666666;
+  --color-negro: #000000;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+body{
+  background-image: url(imgs/otros/background.jpeg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header{
+  background-color: var(--color-1);
+  margin: 0 10%;
+  margin-top: 2rem;
+  box-shadow: 0rem 0rem 2rem var(--color-2);
+}
+
+h1{
+  text-align: center;
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: var(--color-blanco);
+}
+
+p{
+  color: var(--color-blanco);
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+main{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 9rem;
+}
+
+section{
+  background-color: var(--color-1);
+  border-radius: 1rem;
+  margin: 1rem;
+  box-shadow: 0rem 0rem 1rem var(--color-2);
+}
+
+h2{
+  font-size: 2.3rem;
+  color: var(--color-blanco);
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  box-shadow: 0rem 0rem 1rem var(--color-2);
+}
+
+#cartasJugador, #cartasMaquina{
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
+  color: var(--color-blanco);
+}
+
+#contenedorTJ{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+button{
+  display: inline-block;
+  text-transform: capitalize;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  color: var(--color-blanco);
+  background-color: var(--color-1); /* secundario */
+  border: 0.2rem solid var(--color-primario);
+  border-radius: 1rem;
+  text-decoration: none;
+  box-shadow: 0 0 0.6rem var(--color-primario);
+  transition: all 0.4s ease-in-out;
+}
+
+button:hover{
+  color: var(--color-terciario);
+  background-color: var(--color-primario);
+  border: 0.2rem solid var(--color-secundario);
+  box-shadow: 0 0 0.9rem var(--color-primario);
+  transform: scale(1.06);
+}
+
+button:focus{
+  color: var(--color-terciario);
+  background-color: var(--color-primario);
+  border: 0.2rem solid var(--color-secundario);
+  box-shadow: 0 0 0.9rem var(--color-primario);
+  transform: scale(1.06);
+}
+
+button:active{
+  color: var(--color-blanco);
+  background-color: var(--color-terciario);
+  border: 0.2rem solid var(--color-negro);
+  box-shadow: 0 0 0.9rem var(--color-primario);
+}
+
+#mostrarResultados{
+  margin: 0 10%;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.resultados{
+  color: var(--color-blanco);
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer{
+  padding: 1rem;
+  margin-top: auto;
+}
+
+#pieP{
+  background-color: var(--color-1);
+  margin: 0 3%;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  box-shadow: 0rem 0rem 1rem var(--color-2);
+}
